@@ -62,7 +62,7 @@ var gchars =
 Start = function () {
 	console.log("Starting with length:", Difficulty, "count:", Count);
 	$.ajax({
-		url: "robco-industries/ajax/wordlist.php",
+		url: "wordlist.php",
 		method: "GET",
 		data: {
 			length: Difficulty,
@@ -743,7 +743,7 @@ RandomPointer = function () {
 function getWords(length, count) {
 	console.log("Fetching words...");
 	$.ajax({
-		url: 'robco-industries/ajax/wordlist.php',
+		url: 'wordlist.php',
 		method: 'GET',
 		data: {
 			length: length,
